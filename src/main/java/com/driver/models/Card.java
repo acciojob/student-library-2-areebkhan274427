@@ -43,11 +43,11 @@ public class Card {
         this.cardStatus = CardStatus.ACTIVATED;
     }
 
-    public Card(Student student, Date createdOn, Date updatedOn, CardStatus cardStatus) {
+    public Card(Student student, Date createdOn, Date updatedOn) {
         this.student = student;
         this.createdOn = createdOn;
         this.updatedOn = updatedOn;
-        this.cardStatus = cardStatus;
+        this.cardStatus = CardStatus.ACTIVATED;
     }
 
     public int getId() {
