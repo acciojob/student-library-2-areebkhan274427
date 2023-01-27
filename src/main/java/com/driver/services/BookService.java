@@ -21,15 +21,17 @@ public class BookService {
     AuthorRepository authorRepository;
 
     public void createBook(Book book){
-        int id =book.getAuthor().getId();
-        Author author=authorRepository.findById(id).get();
-        book.setAuthor(author);
+//        int id =book.getAuthor().getId();
+//        Author author=authorRepository.findById(id).get();
+//        book.setAuthor(author);
+//
+//        List<Book> currentBooks=author.getBooksWritten();
+//        currentBooks.add(book);
+//        author.setBooksWritten(currentBooks);
+//
+//        authorRepository.save(author);
 
-        List<Book> currentBooks=author.getBooksWritten();
-        currentBooks.add(book);
-        author.setBooksWritten(currentBooks);
-
-        authorRepository.save(author);
+        bookRepository2.save(book);
 
         //bookRepository2.save(book);
     }

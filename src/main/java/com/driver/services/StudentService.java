@@ -50,9 +50,7 @@ public class StudentService {
 
     public void deleteStudent(int id){
         //Delete student and deactivate corresponding card
-        Card card=studentRepository4.findById(id).get().getCard();
+        cardRepository.deactivateCard(id,CardStatus.DEACTIVATED.toString());
         studentRepository4.deleteCustom(id);
-        card.setCardStatus(CardStatus.DEACTIVATED);
-        cardRepository.save(card);
     }
 }
