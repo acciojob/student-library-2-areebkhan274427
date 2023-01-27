@@ -7,6 +7,7 @@ import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -46,7 +47,7 @@ public class Book {
 
     @OneToMany(mappedBy = "book", cascade = CascadeType.ALL)
     @JsonIgnoreProperties("book")
-    private List<Transaction> transactions;
+    private List<Transaction> transactions=new ArrayList<>();
 
     public Book() {
     }
