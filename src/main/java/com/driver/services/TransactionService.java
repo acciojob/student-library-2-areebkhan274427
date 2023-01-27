@@ -130,6 +130,8 @@ public class TransactionService {
 
         cardRepository5.save(card1);
 
+        bookRepository5.updateBook(book);
+
 
      //   bookRepository5.updateBook(book);
 
