@@ -123,7 +123,15 @@ public class TransactionService {
         book.setCard(null);
         book.setAvailable(true);
 
-        bookRepository5.updateBook(book);
+        Card card1=cardRepository5.findById(cardId).get();
+        List<Book> bookList=card1.getBooks();
+
+        bookList.remove(book);
+
+        cardRepository5.save(card1);
+
+
+     //   bookRepository5.updateBook(book);
 
         Transaction tr=new Transaction();
         tr.setBook(transaction.getBook());
