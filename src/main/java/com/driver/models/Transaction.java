@@ -52,6 +52,9 @@ public class Transaction {
         this.transactionDate = transactionDate;
     }
 
+    public Transaction() {
+    }
+
     public int getId() {
         return id;
     }
