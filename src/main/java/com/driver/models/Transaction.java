@@ -12,10 +12,6 @@ import java.util.Date;
 import java.util.UUID;
 
 @Entity
-
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
 public class Transaction {
 
     @Id

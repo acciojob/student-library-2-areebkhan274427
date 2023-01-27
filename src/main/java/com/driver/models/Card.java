@@ -13,9 +13,6 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
-
-@Builder
-@AllArgsConstructor
 public class Card {
 
     @Id

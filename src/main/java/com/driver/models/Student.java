@@ -11,9 +11,6 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-
-@Builder
-@AllArgsConstructor
 public class Student {
 
     @Id

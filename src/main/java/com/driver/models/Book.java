@@ -11,9 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-
-@Builder
-@AllArgsConstructor
 public class Book {
 
     @Id
@@ -25,18 +22,11 @@ public class Book {
     @Enumerated(EnumType.STRING)
     private Genre genre;
 
-    public Book(String name, Genre genre, Author author, Card card, boolean available) {
-        this.name = name;
-        this.genre = genre;
-        this.author = author;
-        this.card = card;
-        this.available = available;
-    }
-
     public Book(String name, Genre genre, Author author) {
         this.name = name;
         this.genre = genre;
         this.author = author;
+        this.available=true;
     }
 
     @ManyToOne

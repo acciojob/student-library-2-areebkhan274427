@@ -11,10 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-
-@Builder
-@AllArgsConstructor
-
 public class Author {
 
     @Id
