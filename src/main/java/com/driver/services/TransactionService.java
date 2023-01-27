@@ -140,7 +140,7 @@ public class TransactionService {
         tr.setCard(transaction.getCard());
         tr.setIssueOperation(false);
         tr.setFineAmount(fine);
-        transaction.setTransactionStatus(TransactionStatus.SUCCESSFUL);
+        tr.setTransactionStatus(TransactionStatus.SUCCESSFUL);
         transactionRepository5.save(tr);
 
 
